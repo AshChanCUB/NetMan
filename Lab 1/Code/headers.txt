@@ -1,0 +1,11 @@
+Contact
+Name
+Location
+Number
+Uptime
+Interface_name
+Interface_Description
+Interface_OperationalStatus
+Interface_PhysicalAddress
+Interface_AdminStatus
+Interface_IncomingUnicastPacketCounter
