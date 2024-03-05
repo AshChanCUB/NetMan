@@ -1,5 +1,4 @@
 from git import Repo, Git
-import os
 
 rep_path = "/home/student/Desktop/netman/git/NetMan/lab5/midterm_objective"
 
