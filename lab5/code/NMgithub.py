@@ -1,7 +1,7 @@
 from git import Repo, Git
 
 try:
-    rep_path = "/home/student/Desktop/netman/git/NetMan"
+    rep_path = "/home/student/Desktop/netman/git/NetMan/lab5/code"
     repo = Repo(rep_path)
     git = Git(rep_path)
     repo.git.add(update=True)
@@ -10,3 +10,6 @@ try:
     origin.push()
 except Exception as e:
     print(e)
+    
+
+
