@@ -4,7 +4,6 @@ import json
 import matplotlib.pyplot as plt
 import time
 
-
 def plotGraph(key, value):
 
     sesh = Session(hostname=value, community='netman', version=2)
