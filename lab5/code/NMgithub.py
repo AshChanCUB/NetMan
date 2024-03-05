@@ -10,6 +10,3 @@ try:
     origin.push()
 except Exception as e:
     print(e)
-    
-
-
