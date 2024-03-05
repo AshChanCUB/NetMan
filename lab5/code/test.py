@@ -38,3 +38,15 @@ if diff_txt or diff_jpg:
 else:
     print('No changes detected')
 
+    print("------------------------OBJECTIVE 2 [TCP DUMP]-------------------------")
+    subprocess.run(['python3', 'NMtcpdump.py'])
+    print("------------------------OBJECTIVE 2 [DHCP Server IPv4]-------------------------")
+    subprocess.run(['python3', 'NMdhcpserver.py'])
+
+    print("------------------------OBJECTIVE 3 [SNMP]-------------------------")
+    subprocess.run(['sudo python3', 'scapyLoad.py'])
+    subprocess.run(['python3', 'NMsnmp.py'])
+
+    print("------------------------OBJECTIVE 4 [GitHUB]-------------------------")
+    subprocess.run(['python3', 'NMgithub.py'])
+

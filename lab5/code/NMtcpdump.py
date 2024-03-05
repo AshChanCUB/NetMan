@@ -60,7 +60,7 @@ def euiDecoder(hexa):
         return(mac_list, client_list)
 
 
-if __name__ == "__main__": 
+if __name__ == "__main__":
     hexa = extractIpv6('/home/student/Desktop/netman/lab5/code/tap0_new.pcap')
     mac_addr_list, client_id_list = euiDecoder(hexa)
 
