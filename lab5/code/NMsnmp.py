@@ -10,7 +10,7 @@ def plotGraph(key, value):
     time_intr = []
     cpu = []
 
-    for i in range(1,2):
+    for i in range(1,25):
         cpu_stat = sesh.get('1.3.6.1.4.1.9.9.109.1.1.1.1.6.1').value
         time_intr.append(i*5)
         cpu.append(int(cpu_stat)+1)
