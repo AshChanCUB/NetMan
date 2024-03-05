@@ -1,6 +1,0 @@
-Router,IP,Username,Password
-R1,,r1ash,r1win
-R2,,r1ash,r2win
-R3,,r3ash,r3win
-R4,2904:2508::C804:31FF:FECF:1C,r4ash,r4win
-R5,2508:9835::c805:31ff:fefc:0,r5ash,r5win
