@@ -1,7 +1,7 @@
 from git import Repo, Git
 
 try:
-    rep_path = "/home/student/Desktop/netman/git/NetMan/lab5/code"
+    rep_path = "/home/student/Desktop/netman/git/NetMan"
     repo = Repo(rep_path)
     git = Git(rep_path)
     repo.git.add(update=True)
