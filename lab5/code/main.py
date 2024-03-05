@@ -1,21 +1,10 @@
 import subprocess
-from threading import Thread
 
-
-
-def normalRun(file):
-    subprocess.run(['python3', file])
 
 if __name__ == "__main__":
 
-    threads = [Thread(target=normalRun, args=('NMtcpdump.py',)),
-               Thread(target=normalRun, args=('NMdhcpserver.py',)),
-               Thread(target=normalRun, args=('scapyLoad.py',), kwargs={'shell' :True}),
-               Thread(target=normalRun, args=('NMsnmp.py',)),
-               Thread(target=normalRun, args=('NMtcpdump.py.py',))]
 
-    for thread in threads:
-        thread.start()
-
-    for thread in threads:
-        thread.join()
+    subprocess.run(['python3', 'NMtcpdump.py'])
+    subprocess.run(['python3', 'NMdhcpserver.py'])
+    subprocess.run(['python3', 'NMsnmp.py'])
+    subprocess.run(['python3', 'NMgithub.py'])
