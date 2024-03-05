@@ -50,17 +50,7 @@
                 "Status": "UP"
             }
         }
-    },
-    "R5": {
-        "addresses": {
-            "Loopback1": {
-                "v4": "5.5.5.5 / 255.0.0.0"
-            },
-            "FastEthernet0/0": {
-                "v4": "25.25.25.25 / 255.255.255.0",
-                "v6": "2508:9835:0000:0000:c805:31ff:fefc:0000 / 64",
-                "Status": "UP"
-            },
+
             "FastEthernet1/0": {
                 "Status": "DOWN"
             }
