@@ -10,4 +10,5 @@ def generate_syn_packets(destination_ip, num_packets):
 destination_ip = '1.1.1.1'
 num_packets = 1000 
 
-generate_syn_packets(destination_ip, num_packets)
+while True:
+    generate_syn_packets(destination_ip, num_packets)

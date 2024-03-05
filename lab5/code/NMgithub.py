@@ -1,20 +1,23 @@
 from git import Repo, Git
+import os
 
-rep_path = "/home/student/Desktop/netman/git/NetMan/lab5/midterm_objective"
-
-repo = Repo(rep_path)
-git = Git(rep_path)
-
-txt_file = 'router_data.txt'
-jpg_file = 'CPU_Utilization_R1.jpg'
+rep_path = "/home/student/Desktop/netman/git/NetMan/lab5/code"
 
 
-diff_txt = repo.git.diff("--", txt_file)
-diff_jpg = repo.git.diff("--", jpg_file)
+if os.path.isdir(os.path.join(rep_path, '.git')):
+    repo = Repo(rep_path)
+    git = Git(rep_path)
+else:
+    print(f"No Git repository found at {rep_path}. Please check the path or initialize a repository.")
+    exit(1)
 
-if diff_txt or diff_jpg:
-    repo.git.add(txt_file)
-    repo.git.add(jpg_file)
+
+changed_files = repo.index.diff(None)
+staged_files = repo.index.diff('HEAD') 
+
+
+if changed_files or staged_files:
+    repo.git.add(A=True)
 
     print('Changes detected')
     repo.index.commit("Detected changes and pushed through NMgithub.py")
